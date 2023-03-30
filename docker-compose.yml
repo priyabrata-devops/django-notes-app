@@ -1,0 +1,12 @@
+version : "3.3"
+services :
+  web :
+    image : "django-notes-app:latest"
+    ports :
+      - "8000-8001:8000"
+  db :
+    image : "mysql:5.7"
+    ports :
+      - "3000-3001:3000"
+    environment :
+      - "MYSQL_ROOT_PASSWORD=Bandan1@"
